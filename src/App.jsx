@@ -1,7 +1,5 @@
-function App (){
-  return (
-    <div>
-      <h1>Hola mundo!</h1>
-    </div>
-  )
+export function App() {
+    return (
+        <h1>Hola, React!</h1>
+    )
 }
