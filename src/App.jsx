@@ -1,5 +1,7 @@
+import { AppLayout } from './components/layout/appLayout/AppLayout';
+
 export function App() {
-    return (
-        <h1>Hola, React!</h1>
-    )
+  return (
+    <AppLayout />
+  );
 }
