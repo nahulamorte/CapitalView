@@ -1,19 +1,62 @@
 :root {
-    /* Fondos */
-    --bg-app: #f2f2f2;       /* Gris muy claro para el fondo general de la página */
-    --bg-card: #ffffff;      /* Blanco puro para las tarjetas */
+    /* Fondos (Tus originales + 1) */
+    --bg-app: #f8fafc;        /* Un gris azulado más moderno que el #f2f2f2 */
+    --bg-card: #ffffff;
+    --bg-sidebar: #ffffff;    /* Por si decides diferenciar el menú lateral */
 
     /* Marca (Primary) */
-    --primary: #2563eb;      /* Azul vibrante para botones, íconos o acentos */
-    --primary-hover: #1d4ed8;/* Azul más oscuro para interacciones (hover) */
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --primary-light: #eff6ff; /* Para estados 'active' suaves en el menú */
 
     /* Tipografía */
-    --text-main: #0f172a;    /* Casi negro para títulos y saldos (máxima legibilidad) */
-    --text-muted: #64748b;   /* Gris medio para subtítulos o texto secundario */
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --text-inv: #ffffff;      /* Texto blanco para botones primarios */
 
-    /* Semántica Financiera (Feedback visual obligatorio) */
-    --success-text: #059669; /* Verde para variaciones positivas */
-    --success-bg: #d1fae5;   /* Fondo verde suave para el badge */
-    --danger-text: #e11d48;  /* Rojo para variaciones negativas */
+    /* Semántica Financiera */
+    --success-text: #059669;
+    --success-bg: #d1fae5;
+    --danger-text: #e11d48;
+    --danger-bg: #ffe4e6;
+    --warning-text: #d97706;  /* Para alertas o acciones pendientes */
+    --warning-bg: #fef3c7;
+
+
+    /* Bordes y Líneas (Fundamentales para el 'Blocking') */
+    --border-color: #e2e8f0;  /* Para dividers y bordes de cards */
+    --border-focus: #94a3b8;  /* Para cuando el usuario hace clic en un input */
+
+    /* Elevación (Sombras para dar profundidad) */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    /* Radios (Consistencia en esquinas) */
+    --radius-sm: 6px;
+    --radius-md: 10px;        /* Ideal para las SummaryCards */
+    --radius-lg: 16px;
+
+    /* Transiciones (Para que los hovers no sean bruscos) */
+    --transition-fast: 0.2s ease;
     --danger-bg: #ffe4e6;    /* Fondo rojo suave para el badge */
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental: el padding no agranda la caja */
+}
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Evita el scroll doble en toda la pantalla */
+}
+
+img {
+    max-width: 100%; /* Evita que las imágenes "exploten" su tamaño */
+    display: block;
+}
+/*
+
+

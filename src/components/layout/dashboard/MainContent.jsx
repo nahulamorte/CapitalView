@@ -1,9 +1,10 @@
 import "./MainContent.css";
+import { DashboardHeader } from "./dashboardHeader/dashboardHeader";
 
 export function MainContent(){
     return(
         <div className="main-container">
-            <h1>MainContent</h1>
+            <DashboardHeader />
         </div>
     );
 }

@@ -1,6 +1,4 @@
-
-
-  #root {
+ #root {
     display: flexbox;
     align-self: start;
     justify-content: space-around;
@@ -14,8 +12,6 @@
     align-self: start;
     
   }
-
-
 
   h1 {
     color: var(--text-main);
