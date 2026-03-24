@@ -1,5 +1,5 @@
 import "./MainContent.css";
-import { DashboardHeader } from "./dashboardHeader/dashboardHeader";
+import { DashboardHeader } from "../../dashboard/dashboardHeader/DashboardHeader";
 
 export function MainContent(){
     return(

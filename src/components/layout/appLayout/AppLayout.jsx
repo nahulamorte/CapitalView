@@ -1,6 +1,6 @@
 import './AppLayout.css';
 import { SideBar } from '../sideBar/SideBar';
-import { MainContent } from "../dashboard/MainContent";
+import { MainContent } from "../mainContent/MainContent";
 
 export function AppLayout() {
     return (

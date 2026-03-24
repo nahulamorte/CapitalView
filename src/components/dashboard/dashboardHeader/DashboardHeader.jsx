@@ -2,9 +2,9 @@ import './DashboardHeader.css';
 import { ButtonDashboard} from './ButtonDashboard';
  
 //Iconos:
-import lensIcon from '../../../../assets/lens.svg';
-import ringIcon from '../../../../assets/notification.svg';
-import toggleIcon from '../../../../assets/toggles.svg';
+import lensIcon from '../../../assets/lens.svg';
+import ringIcon from '../../../assets/notification.svg';
+import toggleIcon from '../../../assets/toggles.svg';
 
 export function DashboardHeader() {
     return (
