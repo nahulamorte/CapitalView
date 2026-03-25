@@ -6,7 +6,7 @@ export function SummaryCard({title, amount, icon, trend, comparative}){
             <div className="card-header">
                 <span className="card-title">{title}</span>
                 <div className="card-icon-container">
-                    <img src={icon} alt={title} />
+                    <img src={icon} alt={title} className="card-icon" />                
                 </div>
             </div>
             <div className="card-body">
