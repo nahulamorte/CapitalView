@@ -1,6 +1,15 @@
 .summary-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-    gap: 20px;
-    padding: 20px;
+    /* Traducido: "Crea tantas columnas de al menos 240px como quepan en el ancho" */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--gap-main); /* 24px según nuestro Design System */
+    padding: var(--gap-main);
+    width: 100%;
+}
+
+/* Ajuste opcional para pantallas muy grandes */
+@media (min-width: 1600px) {
+    .summary-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
