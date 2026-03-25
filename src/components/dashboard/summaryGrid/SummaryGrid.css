@@ -1,0 +1,6 @@
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 20px;
+    padding: 20px;
+}
