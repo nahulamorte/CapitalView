@@ -1,0 +1,78 @@
+:root {
+    /* --- 1. PALETA DE COLORES (BLUES & BRAND) --- */
+    --primary: #3b82f6;          /* Vibrant Blue (Main Brand) */
+    --primary-dark: #2563eb;     /* Active Elements */
+    --primary-deep: #1e3a8a;     /* CTA Banners / Navy Accents */
+    --primary-light: #eff6ff;    /* Background Active Items */
+    --primary-soft: #dbeafe;     /* Subtle Buttons / Borders */
+    --primary-hover: #1d4ed8;
+
+    /* --- 2. FONDOS Y SUPERFICIES (BACKGROUNDS) --- */
+    --bg-app: #f1f5f9;           /* Soft Cool Gray (Main Page) */
+    --bg-card: #ffffff;          /* Pure White */
+    --bg-surface: #f8fafc;       /* Table Headers / Subtle Sections */
+    --bg-sidebar: #ffffff;
+
+    /* --- 3. TIPOGRAFÍA Y TEXTO (SLATE GRAYS) --- */
+    --text-main: #0f172a;        /* Headings & Titles (Deep Slate) */
+    --text-body: #334155;        /* General Info (Dark Gray) */
+    --text-muted: #64748b;       /* Labels & Comparisons (Medium Gray) */
+    --text-ghost: #94a3b8;       /* Placeholders & Icons (Light Gray) */
+    --text-inv: #ffffff;         /* Inverted text for dark backgrounds */
+
+    /* --- 4. SEMÁNTICA FINANCIERA (STATUS) --- */
+    --success-text: #059669;     /* Emerald Green */
+    --success-bg: #ecfdf5;       /* Soft Mint */
+    --danger-text: #dc2626;      /* Vivid Red */
+    --danger-bg: #fef2f2;        /* Soft Pinkish */
+    --warning-text: #d97706;     /* Amber */
+    --warning-bg: #fef3c7;
+
+    /* --- 5. ACTIVOS ESPECÍFICOS (CRYPTO/ASSETS) --- */
+    --asset-btc: #f7931a;
+    --asset-eth: #627eea;
+    --asset-sol: #14b8a6;
+
+    /* --- 6. GLASSMORPHISM (SPECIAL UI EFFECTS) --- */
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-blur: blur(10px);
+    --glass-border: rgba(255, 255, 255, 0.2);
+
+    /* --- 7. BORDES Y ELEVACIÓN (UI DEPTH) --- */
+    --border-light: #e2e8f0;     /* Dividers & Open UI */
+    --border-focus: #3b82f6;     /* Primary blue for focus states */
+    
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-blue: 0 4px 14px 0 rgba(59, 130, 246, 0.3); /* For Primary Buttons */
+
+    /* --- 8. LAYOUT & SPACING (CONSISTENCIA) --- */
+    --radius-sm: 6px;
+    --radius-md: 10px;           /* Standard for Cards */
+    --radius-lg: 16px;
+    --radius-full: 9999px;       /* For pill-shaped badges */
+    
+    --gap-main: 24px;            /* Espaciado estándar entre cards */
+    --transition-fast: 0.2s ease;
+}
+
+/* --- RESETS Y CONFIGURACIÓN BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; /* Tipografía más nítida */
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-app);
+    color: var(--text-body);
+}
+
+/* Evitar scroll lateral indeseado */
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,60 @@
+.header-container {
+    width: 100%;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem; /* Espaciado interno para que respire */
+    height: 70px;       /* Altura fija para consistencia */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Buscador a la izquierda, botones a la derecha */
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-app); /* Fondo ligeramente gris para resaltar del blanco */
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    transition: border-color var(--transition-fast);
+    width: 300px; /* Ancho controlado */
+}
+
+.search-bar:focus-within {
+    border-color: var(--primary); /* Se ilumina al hacer clic */
+    background-color: #ffffff;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+}
+
+header-actions {
+    display: flex !important;       /* Fuerza el modo fila */
+    flex-direction: row !important; /* Asegura que sea horizontal */
+    gap: 15px;                      /* Separa los botones */
+    align-items: center;
+}

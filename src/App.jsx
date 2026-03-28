@@ -1,7 +1,7 @@
-function App (){
+import { AppLayout } from './components/layout/appLayout/AppLayout';
+
+export function App() {
   return (
-    <div>
-      <h1>Hola mundo!</h1>
-    </div>
-  )
+    <AppLayout />
+  );
 }

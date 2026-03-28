@@ -1,0 +1,82 @@
+.card-container {
+    background-color: var(--bg-card);
+    padding: 1.5rem; /* 24px */
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Efecto sutil al pasar el mouse */
+.card-container:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    color: var(--text-muted);
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.card-icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light); 
+    color: var(--primary);                
+    border-radius: var(--radius-sm);
+}
+
+.card-icon-container svg {
+    width: 22px;  /* Ajusta el tamaño a tu gusto */
+    height: 22px;
+    stroke: var(--primary); /* Esto le dará el color azul de tu marca */
+    display: block;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card-amount {
+    color: var(--text-main);
+    font-size: 1.75rem; 
+    font-weight: 700;
+}
+
+.card-trend {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-full);
+}
+
+/* Lógica de colores semánticos (Emerald vs Red) */
+/* Estas clases las deberás aplicar dinámicamente en tu JSX */
+.trend-up {
+    color: var(--success-text);
+    background-color: var(--success-bg);
+}
+
+.trend-down {
+    color: var(--danger-text);
+    background-color: var(--danger-bg);
+}
