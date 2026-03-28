@@ -1,12 +1,14 @@
 import './SideBar.css';
 
 import { SideBarItem } from './SideBarItem/SideBarItem';
+import { UserInfo } from './userInfo/UserInfo';
 import logo from "../../../assets/logoCapitalView.png"
 
 //Imports de logo
 import home from '../../../assets/home.svg'
 import wallet from '../../../assets/wallet.svg'
 import  market from '../../../assets/market.svg'
+import user from '../../../assets/circle-user.svg'
 
 
 export function SideBar() {
@@ -31,19 +33,12 @@ export function SideBar() {
           />
         ))}
       </nav>
-
+      <UserInfo
+        photo={user}
+        name={"Carlos Tevez"}
+        nickname={"MapacheInvestiments"} 
+      />
     </aside>
   );
 }
 
-/*
-
-
-      <div className="sidebar-user">
-        <div className="user-photo">
-
-        </div>
-        <div className="userinfo">
-          
-        </div>
-      </div>*/ 
