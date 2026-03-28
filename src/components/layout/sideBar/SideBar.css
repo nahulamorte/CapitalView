@@ -8,6 +8,19 @@
   flex-direction: column;
   padding: 1.5rem;
   
-  /* Temporal para el blocking (borrar luego) */
-  background-color: #ffcccc; 
+  background-color: var(--bg-sidebar); 
 }
+
+.sidebar-logo {
+  
+}
+
+.sidebar-logo img{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 14rem;
+  
+}
+
