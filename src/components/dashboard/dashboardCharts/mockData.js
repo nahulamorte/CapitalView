@@ -9,8 +9,8 @@ export const monthlyEvolutionData = [
 ];
 
 export const portfolioDistribution = [
-    { name: 'Acciones (Stocks)', value: 45, color: 'var(--primary)' },
-    { name: 'Cripto', value: 25, color: 'var(--primary-light)' },
-    { name: 'Bonos', value: 20, color: 'var(--text-ghost)' },
-    { name: 'Efectivo', value: 10, color: 'var(--border-light)' },
+    { name: 'Acciones (Stocks)', value: 45, color: '#1d4ed8' }, 
+    { name: 'Bonos', value: 20, color: '#059669' },               
+    { name: 'Cripto', value: 25, color: '#f59e0b' },             
+    { name: 'Efectivo', value: 10, color: '#6366f1' },          
 ];
