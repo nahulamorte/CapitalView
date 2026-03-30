@@ -5,6 +5,5 @@
   overflow-y: auto;      /* Permite scroll solo en el contenido */
   padding: 2rem;         /* Espacio interno para que nada toque los bordes */
 
-  /* Temporal para el blocking (borrar luego) */
-  background-color: #cce0ff;
+
 }
