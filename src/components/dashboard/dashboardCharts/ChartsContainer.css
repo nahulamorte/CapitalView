@@ -1,3 +1,26 @@
-.chart-container {
-    
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.balance-chart {
+    grid-column: span 2;
+}
+
+.pie-chart {
+    grid-column: span 1;
+}
+
+.placeholder-card {
+    background-color: var(--bg-card);
+    border: 1px dashed var(--border-light);
+    border-radius: var(--radius-lg);
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-ghost);   
 }
