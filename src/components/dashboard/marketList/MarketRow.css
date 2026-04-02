@@ -1,0 +1,80 @@
+.market-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-light);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.market-row-container:hover {
+    background-color: rgba(var(--primary-rgb), 0.05); 
+}
+
+.market-row-container:last-child {
+    border-bottom: none;
+}
+
+.asset-identity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1; 
+}
+
+.asset-logo-placeholder {
+    width: 36px;
+    height: 36px;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.asset-names {
+    display: flex;
+    flex-direction: column;
+}
+
+.asset-full-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.asset-ticker {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.asset-values {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.asset-price {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.asset-change {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.asset-change.positive {
+    color: var(--success-text); 
+}
+
+.asset-change.negative {
+    color: var(--danger-text); 
+}
