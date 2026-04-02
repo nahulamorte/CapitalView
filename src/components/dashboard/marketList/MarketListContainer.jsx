@@ -1,8 +1,8 @@
 import { MarketList } from './MarketList';
-import { cryptoData, stockData } from '../Charts/mockData';
-import './MarketListsContainer.css';
+import { cryptoData, stockData } from '../dashboardCharts/mockData';
+import './MarketListContainer.css';
 
-export function MarketListsContainer() {
+export function MarketListContainer() {
     return (
         <section className="market-lists-grid">
             <div className="market-column">

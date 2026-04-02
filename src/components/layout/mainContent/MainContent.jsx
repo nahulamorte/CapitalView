@@ -2,7 +2,7 @@ import "./MainContent.css";
 import { DashboardHeader } from "../../dashboard/dashboardHeader/DashboardHeader";
 import { SummaryGrid } from "../../dashboard/summaryGrid/SummaryGrid";
 import { ChartsContainer } from "../../dashboard/dashboardCharts/ChartsContainer";
-import { MarketRow } from "../../dashboard/marketList/MarketRow";
+import { MarketListContainer } from "../../dashboard/marketList/MarketListContainer";
 
 export function MainContent(){
     return(
@@ -10,7 +10,7 @@ export function MainContent(){
             <DashboardHeader />
             <SummaryGrid/>
             <ChartsContainer/>
-            <MarketRow/>
+            <MarketListContainer/>
         </div>
     );
 }
